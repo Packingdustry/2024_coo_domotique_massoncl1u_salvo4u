@@ -24,4 +24,12 @@ public class Telecommande {
             lampe.allumer();
         }
     }
+
+    public String toString(){
+        String res = "";
+        for (int i = 0 ; i < lampes.size(); i++){
+            res += "lampe numéro"+i+" "+lampes.get(i).toString()+"\n";
+        }
+        return res;
+    }
 }
